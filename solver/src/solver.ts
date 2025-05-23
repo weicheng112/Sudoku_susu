@@ -1,4 +1,4 @@
-import { sudokuBoard } from "./types.js";
+import { sudokuBoard } from "./types";
 
 export function solve(board: sudokuBoard): boolean {
   for (let row = 0; row < 9; row++) {
