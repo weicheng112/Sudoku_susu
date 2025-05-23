@@ -7,7 +7,7 @@ export interface Cell {
   isInitial: boolean;
 }
 
-export interface GameState {
+export interface SudokuGameState {
   board: sudokuBoard;
   cellDetails: Cell[][];
   selectedCell: { row: number; col: number } | null;
