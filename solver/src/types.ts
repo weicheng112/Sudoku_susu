@@ -1,1 +1,1 @@
-export type sudoku_Board = number[][];
+export type sudokuBoard = number[][];

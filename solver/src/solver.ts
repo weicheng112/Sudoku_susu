@@ -1,6 +1,6 @@
-import { sudoku_Board } from "./types.js";
+import { sudokuBoard } from "./types.js";
 
-export function solve(board: sudoku_Board): boolean {
+export function solve(board: sudokuBoard): boolean {
   for (let row = 0; row < 9; row++) {
     for (let col = 0; col < 9; col++) {
       if (board[row][col] === 0) {
@@ -19,7 +19,7 @@ export function solve(board: sudoku_Board): boolean {
 }
 
 function isValid(
-  board: sudoku_Board,
+  board: sudokuBoard,
   row: number,
   col: number,
   num: number
