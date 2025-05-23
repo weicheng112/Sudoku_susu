@@ -2,37 +2,110 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #333;
   color: white;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  margin-top: 10px;
+  color: #666;
+}
+
+.sudoku-container {
+  margin: 10px auto;
+}
+
+.sudoku-board {
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.sudoku-row {
+  display: flex;
+}
+
+.sudoku-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sudoku-row:nth-child(3n) .sudoku-cell {
+  border-bottom: 1px solid black;
+}
+
+.sudoku-cell:nth-child(3n) {
+  border-right: 1px solid black;
+}
+
+.sudoku-cell.selected {
+  background-color: #eee;
+}
+
+.sudoku-cell.initial {
+  font-weight: bold;
+}
+
+.controls {
+  margin: 10px;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.message {
+  margin: 10px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+.how-to-play {
+  margin: 10px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.guide-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.guide-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.guide-content h3 {
+  margin-top: 0;
+}
+
+.guide-content ol {
+  padding-left: 20px;
+}
+
+.guide-content ul {
+  padding-left: 20px;
 }

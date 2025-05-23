@@ -1,4 +1,4 @@
-import { sudokuBoard } from "../../solver/src/types";
+import { sudokuBoard } from "./utils/types";
 
 export type { sudokuBoard };
 
